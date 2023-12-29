@@ -1,0 +1,656 @@
+@font-face {
+    font-family:spotify-bold ;
+    src: url(./fonts/CircularSpotify-UI-Latin-OS2v3-Bold.woff2);
+}
+@font-face {
+    font-family:spotify-medium ;
+    src: url(./fonts/CircularSpotify-UI-Latin-OS2v3-Black.woff2);
+}
+
+@font-face {
+    font-family:spotify-light ;
+    src: url(./fonts/CircularSpotify-UI-Latin-OS2v3-Book.woff2);
+}
+
+/* Fonts */
+.font-bold{
+    font-family:spotify-bold ;
+}
+.font-medium{
+    font-family: spotify-medium;
+}
+.font-light{
+    font-family: spotify-light;
+}
+
+/* General CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+/* Navigation Bar */
+nav{
+  background-color: #000;
+} 
+.navbar{
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    /* background-color: #000; */
+}
+.logo{
+    height: 27px;
+    width: 89px;
+} 
+.nav-list{
+    display: none;
+}
+
+.nav-items:hover{
+    color: #1ed760 ;
+    cursor: pointer;
+}
+
+.line{
+    font-family: none;
+}
+.line:hover{
+    color: white;
+    cursor: default;
+}
+/* Hero Section */
+.hero-section{
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+    padding: 0px;
+    background: url(https://www.scdn.co/i/free/bubbles-mobile.svg) center center / 100% 927px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166)) rgb(108, 14, 224);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 88px 15px 70px;
+    
+}
+
+.hero-width{
+    max-width: 1170px;
+}
+
+.hero-content{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 32px;
+    font-family: spotify-medium;
+}
+.phone-div{
+    display: none;
+}
+
+button{
+    padding: 13px 32px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: white;
+    font-family: spotify-medium;
+}
+
+button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+/* Feature Section */
+.feature-section{
+    padding: 15px 15px 15px 0px;
+}
+.heading{
+    text-align: center;
+    font-size: 28px;
+    margin: 30px;
+    line-height: 32px;
+    font-family: spotify-medium;
+}
+.feature{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+.feature-img{
+    aspect-ratio: 1;
+    width: 30%;
+    max-width: 115.83px;
+    height: 30%;
+    margin: 20px;
+}
+
+.feature-info{
+    padding: 35px 0;
+    width: 63%;
+}
+.feature-heading{
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 21px;
+    font-family: spotify-bold;
+}
+.feature-content{
+    font-size: 16px;
+    font-family:spotify-light ;
+}
+
+/* Free Section */
+.free-section{
+    margin-top: 40px;
+}
+.free-img{
+    background: url(./assets/bubbles-phone-mobile.svg) center top 16px/506px 512px no-repeat,white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+}
+.mobile-screen2{
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.3);
+    border-radius: 35px 35px 0 0;
+
+}
+.glare{
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(transparent,rgb(176,35,194));
+    z-index: 5;
+    margin-top: -75px;
+}
+.free-info{
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(rgb(176, 35, 194) 15%, rgb(96, 11, 231));
+    padding: 20px 40px 70px;
+}
+.free-content{
+    font-size: 32px;
+    margin-top: 50px;
+    color: white;
+}
+
+/* FAQ Section */
+.faq-section{
+    padding: 35px 15px;
+    cursor: pointer;
+}
+.question-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 28px;
+}
+.question-div:hover{
+    background-color:#f0f0f0 ;
+    cursor: pointer;
+
+}
+
+.question{
+    padding-right: 10px;
+    font-size: 18px;
+}
+.question-div:hover .question{
+    text-decoration: underline;
+} 
+.answer{
+    padding: 35px 15px;
+    cursor:default;
+}
+.active{
+    /* text-decoration: underline; */
+    background-color: var(--background-elevated-highlight,#f0f0f0);
+}
+.active p{
+    text-decoration: underline;
+}
+
+/* Ready Section */
+.ready-section{
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    background: url(https://www.scdn.co/i/free/lets-play.svg) center center / 100% no-repeat, linear-gradient(-155deg, rgb(108, 14, 224) 55%, rgb(240, 55, 166) 115%) rgb(108, 14, 224);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ready-content{
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    padding: 70px 21px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+.btn{
+    padding: 0px 15px 120px 15px;
+}
+.btn button{
+    margin: 0px 50px;
+}
+
+/* Footer Section */
+.footer-nav{
+    padding: 50px 0px 20px;
+}
+.footer-logo{
+    padding: 0px 15px;
+   
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-text{
+    color: white;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+.foot-head{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin: 40px 0px 20px;
+}
+.list-item{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 0px;
+    
+} 
+.footer-icon{
+    display: inline;
+    
+    
+}
+.footer-icon ul{
+    margin: 120px 15px 15px;
+}
+.icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    /* padding: 0px 10px; */
+    background-color: #222326;
+    clip-path: circle(40%);
+}
+.footer-location{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 15px;
+}
+.location-link{
+    display: flex;
+    flex-shrink: 0;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    color:#919496;
+}
+.footer-policy{
+    display: flex;
+    font-size: 10px;
+    color: white;
+}
+.policy-list{
+    margin: 0px 45px 0px 0px;
+    padding: 0px 0px 0px 15px;
+}
+.policy-items{
+    list-style: none;
+    display: inline-block;
+    line-height: normal;
+    letter-spacing: 0;
+    margin-right: 24px;
+}
+.policy-link{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 10px;
+    color:#919496;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+.footer-span{
+    padding: 10px 0px;
+    margin: 0px 15px 0px 0px;
+    flex-shrink: 0;
+    font-size: 10px;
+    color: #919496;
+}
+.footer-icon{
+    margin: 120px 22px 15px;
+}
+.media-icon{
+    padding: 10px;
+}
+.list-item:hover{
+    color: #1ed760 ;
+    cursor: pointer;
+}
+.icon:hover{
+    color: #1ed760 ;
+    cursor: pointer;
+}
+.policy-link:hover{
+    color: #1ed760 ;
+    cursor: pointer;
+}
+
+/* Tablet View */
+@media(min-width:768px){
+    .nav-list{
+        display: none;
+    }
+    /* Hero Section */
+    .hero-section{
+        background: url(./assets/bubbles-dktp.svg) center -138px / 100% 1068px no-repeat, linear-gradient(-45deg, rgb(108, 14, 224) -5%, rgb(240, 55, 166));
+        min-height: 450px;
+    }
+    .hero-content{
+        font-size: 64px;
+    }
+    .phone-div{
+        display: none;
+    }
+
+    /* Feature Section */
+    .heading{
+        font-size: 40px;
+        margin:60px 0px;
+    }
+    .feature-div{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+    .feature{
+        max-width: 360px;
+    }
+    .feature-info{
+        max-width: 55%;
+    }
+    .feature-img {
+        aspect-ratio: 1;
+        width: 30%;
+        max-width: 139.83px;
+        height: 60%;
+        margin: 20px;
+    }
+
+    /* Free Section */
+    .free-img{
+        display: none;
+    }
+    .free-content{
+        font-size: 40px;
+    }
+
+    /* FAQ Section */
+    .faq-section{
+        padding: 75px 15px;
+    }
+
+    /* Ready Section */
+    .ready-content{
+        font-size: 60px;
+    }
+    .btn{
+        margin: 10px 214px;
+        padding: 0px 15px 89px 15px;
+    }
+
+    /* Footer View */
+   
+    .footer-container{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+    }
+    .footer-logo{
+        padding: 0px 40px;
+       
+    }
+    .footer-span{
+        margin: 0 15px 0 auto;
+    }
+
+}
+
+/* Laptop View */
+@media(min-width:1024px){
+    /* Navigation Bar */
+    .navbar{
+        height:70px;
+        margin: 0px 21.33px;
+    }
+    .logo{
+        height: 40px;
+        width: 132px;
+    }
+    #last-item{
+        padding: 28px 0px 28px 17px;
+    }
+    .bx-menu{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        color: white;
+    }
+    .nav-items{
+        padding: 28px 17px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Hero Section */
+    .hero-section{
+        padding: 0px;
+        height: 600px;
+    }
+    .hero-width{
+        display: flex;
+        margin: 0 auto;
+
+    }
+    .phone-div{
+        display: block;
+        width: 40%;
+        margin-left: 50px; 
+    }
+    .phone-img{
+        padding-top: 104px;
+        width: 281px;
+        margin: 0 auto;
+    } 
+    .hero-div{
+        width: 60%;
+        padding:  180px 15px 0 0;
+    } 
+
+    /* Feature Section */
+    .feature-div{
+        max-width: 940px;
+    }
+    .feature{
+        max-width: 100%;
+        width: 50%;
+    }
+    .feature-img{
+        width: 22%;
+    }
+
+    /* Free Section */
+    .free-info{
+        padding: 190px 15px;
+    }
+    .free-content{
+        font: size 48px;
+    }
+
+    /* FAQ Section */
+    .faq-section{
+        max-width: 970px;
+        margin: 0 auto;
+    }
+
+    /* Ready Section */
+    .ready-section{
+        height: 450px;
+    }
+    .ready-content{
+        font-size: 80px;
+        margin-top: 85px;
+    }
+    .btn{
+        margin: 10px 321px;
+    }
+    /* Footer Section */
+    
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        /* min-width: 970px; */
+        padding: 80px 0 50px;
+    }
+    .footer-logo{
+        padding: 10px 40px;
+    }
+    .footer-icon{
+        margin: 0 10px 0 116.333px;
+    }
+    .footer-icon ul{
+        margin: 50px 0 0;
+    }
+    
+    .footer-span{
+        margin: 0 15px 0 480px;
+    }
+    .footer-location{
+        width: 100%;
+        margin: 0px 45px;
+    }     
+    .policy-list{
+        padding: 0px 0px 0px 20px;
+    }
+    .policy-list{
+        display: flex;
+        flex-direction: row;
+    }
+    .media-icon{
+        padding: 10px;
+    }
+    
+}
+
+/* Desktop View For 1200px */
+@media(min-width:1200px){
+    .nav-bar{
+        max-width: 1170px;
+    }
+
+    .feature-section{
+        margin: 0px 135px;
+        padding: 75px 15px;
+    }
+
+    .feature-div{
+        max-width: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature{
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-img{
+        margin: 0 auto 40px;
+        width: 142px;
+        max-width: 100%;
+    }
+    .feature-info{
+        width: 238px;
+        margin: 0 5px;
+        padding: 0;
+        max-width: 78%;
+    }
+
+    .faq-section{
+        max-width: 1170px;
+    }
+
+    .btn{
+        margin: 10px 460px;
+    }
+    /* Footer Section */
+    
+    .footer-nav{
+        padding: 80px 90px 50px;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        /* padding: 0px 15px; */
+    }
+    
+    .footer-icon{
+        margin: 0 20px 0 22.333px;
+    }
+    .footer-span{
+        margin: 0 20px 0 535px;
+    }
+    .footer-text{
+        padding: 0 101px 0 0;
+    }
+    /* .icon{
+        padding: 10px;
+    }
+     */
+    .media-icon{
+        padding: 10px;
+    }
+    .footer-policy{
+        padding: 0 15px;
+    } 
+}
+
